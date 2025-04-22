@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Redirect back to index.html and let React Router handle the path
+      const redirectTo = '/AnyWhere' + window.location.pathname.replace('/AnyWhere', '');
+      window.location.replace(redirectTo);
+    </script>
+  </head>
+  <body></body>
+</html>
