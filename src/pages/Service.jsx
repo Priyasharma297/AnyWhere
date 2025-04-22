@@ -357,6 +357,8 @@ const Service = () => {
                   <button
                     onClick={() => {
                       alert(`Booking ${mechanic.name} for your service!`);
+
+                      window.location.href = "/AnyWhere/signup";
                     }}
                     className="w-full py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-600 transition-colors duration-300"
                   >
