@@ -7,7 +7,7 @@ import FooterContent from "../components/FooterContent";
 const services = [
   { name: "Oil Change", img: "./Images/oilChnage.jpg" },
   { name: "Brake Repair", img: "./Images/brake.jpg" },
-  { name: "Tire Replacement", img: "/.Images/tire.jpeg" },
+  { name: "Tire Replacement", img: "./Images/tire.jpeg" },
   { name: "Battery Check", img: "./Images/battery.png" },
   { name: "Engine Repair", img: "./Images/reapir.jpeg" },
   { name: "Vehicle Wash", img: "./Images/car.jpg" },
