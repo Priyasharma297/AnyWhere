@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Navbar = ({ handleProceedToBuy }) => {
@@ -14,11 +15,21 @@ const Navbar = ({ handleProceedToBuy }) => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 items-center">
-          <li><a href="/" className="text-gray-800 font-bold hover:text-gray-600">Home</a></li>
-          <li><a href="/service" className="text-gray-800 font-bold hover:text-gray-600">Service</a></li>
-          <li><a href="/Store" className="text-gray-800 font-bold hover:text-gray-600">Store</a></li>
-          <li><a href="/Login" className="text-gray-800 font-bold hover:text-gray-600">Login</a></li>
-          <li><a href="/Signup" className="text-gray-800 font-bold hover:text-gray-600">Sign Up</a></li>
+          <li>
+            <Link to="/" className="text-gray-800 font-bold hover:text-gray-600">Home</Link>
+          </li>
+          <li>
+            <Link to="/service" className="text-gray-800 font-bold hover:text-gray-600">Service</Link>
+          </li>
+          <li>
+            <Link to="/store" className="text-gray-800 font-bold hover:text-gray-600">Store</Link>
+          </li>
+          <li>
+            <Link to="/login" className="text-gray-800 font-bold hover:text-gray-600">Login</Link>
+          </li>
+          <li>
+            <Link to="/signup" className="text-gray-800 font-bold hover:text-gray-600">Sign Up</Link>
+          </li>
           <button 
             onClick={handleProceedToBuy} 
             className="text-gray-800 hover:text-gray-600 transition-transform duration-300 hover:scale-110"
@@ -36,11 +47,21 @@ const Navbar = ({ handleProceedToBuy }) => {
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="flex flex-col gap-4 mt-4 md:hidden bg-gray-100 p-4 rounded shadow-md">
-          <li><a href="/" className="text-gray-800 font-semibold">Home</a></li>
-          <li><a href="/service" className="text-gray-800 font-semibold">Service</a></li>
-          <li><a href="/Store" className="text-gray-800 font-semibold">Store</a></li>
-          <li><a href="/Login" className="text-gray-800 font-semibold">Login</a></li>
-          <li><a href="/Signup" className="text-gray-800 font-semibold">Sign Up</a></li>
+          <li>
+            <Link to="/" className="text-gray-800 font-semibold">Home</Link>
+          </li>
+          <li>
+            <Link to="/service" className="text-gray-800 font-semibold">Service</Link>
+          </li>
+          <li>
+            <Link to="/store" className="text-gray-800 font-semibold">Store</Link>
+          </li>
+          <li>
+            <Link to="/login" className="text-gray-800 font-semibold">Login</Link>
+          </li>
+          <li>
+            <Link to="/signup" className="text-gray-800 font-semibold">Sign Up</Link>
+          </li>
           <button 
             onClick={handleProceedToBuy} 
             className="text-gray-800 self-start hover:text-gray-600 transition-transform duration-300"

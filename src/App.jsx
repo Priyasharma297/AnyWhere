@@ -9,7 +9,7 @@ import Cart from './pages/Cart';
 import Dashboard from './pages/Dashboard';
 function App() {
   return (
-    <Router>
+    <Router basename="/AnyWhere">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store />} />

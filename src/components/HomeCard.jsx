@@ -4,17 +4,18 @@ function HomeCard() {
   return (
     <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 sm:gap-20 p-6 sm:p-10">
       <Card
-        image="/Images/mechanicc.avif"
+        image={`${import.meta.env.BASE_URL}Images/mechanicc.avif`}
+
         title="Mechanic"
         description="Empower your craft by joining a community that values expertise and convenience."
       />
       <Card
-        image="/Images/user.jpeg"
+        image="./Images/user.jpeg"
         title="User"
         description="In a world that never stops, neither should you. Access reliable help anytime, anywhere."
       />
       <Card
-        image="/Images/store.jpg"
+        image="./Images/store.jpg"
         title="Store"
         description="Empower your craft by joining a community that values expertise and convenience."
       />

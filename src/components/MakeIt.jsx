@@ -16,25 +16,25 @@ const MakeIt = () => {
           <Step
             title="01"
             description="Register"
-            image="/Images/register.png"
+            image="./Images/register.png"
           />
           <Arrow />
           <Step
             title="02"
             description="Access job opportunities"
-            image="/Images/book.jpg"
+            image="./Images/book.jpg"
           />
           <Arrow />
           <Step
             title="03"
             description="Provide service"
-            image="/Images/service.png"
+            image="./Images/service.png"
           />
           <Arrow />
           <Step
             title="04"
             description="Grow your business"
-            image="/Images/growth.png"
+            image="./Images/growth.png"
           />
         </div>
       </div>
